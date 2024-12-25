@@ -70,7 +70,3 @@ body{
     .header_main_sec2 p:first-child{
         color: #b52020;
     }
-    .header_main_sec2 p:last-child:hover{
-        color: #0518af; 
-        font-size: 2rem; 
-    }
