@@ -1,21 +1,19 @@
-
 *{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', sans-serif;
 }
 
 body{
     padding: 0%;
     margin: 0%;
-    background-color: #040409;
-    background-image: url('imgs/bg_img2.jpg'); 
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center; 
     width: 100vw; 
     height: 100vh; 
+    background-color: #040409;
 }
 
 .header_main{
@@ -24,6 +22,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; 
+    /* border: 2px solid white; */
     }
     .header_main_sec1{
         height: 8vh;
@@ -69,7 +68,7 @@ body{
         font-size:3vh;
     }
     .header_main_sec2 p:first-child{
-        color: red;
+        color: #b52020;
     }
     .header_main_sec2 p:last-child:hover{
         color: #0518af; 

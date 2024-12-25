@@ -1,21 +1,20 @@
-
+/* General Reset */
 *{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', sans-serif;
 }
 
 body{
     padding: 0%;
     margin: 0%;
-    background-color: #040409;
-    background-image: url('imgs/bg_img2.jpg'); 
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center; 
     width: 100vw; 
     height: 100vh; 
+    background-color: #040409;
 }
 
 .header_main{
@@ -24,6 +23,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; 
+    /* border: 2px solid white; */
     }
     .header_main_sec1{
         height: 8vh;
@@ -69,9 +69,93 @@ body{
         font-size:3vh;
     }
     .header_main_sec2 p:first-child{
-        color: red;
+        color: #b52020;
     }
     .header_main_sec2 p:last-child:hover{
         color: #0518af; 
         font-size: 2rem; 
     }
+
+/* About Section Styling */
+.about-section {
+    max-width: 1200px;
+    margin: 10px auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.about-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #b52020;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.about-container .intro {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+    color: #e0e0e0;
+}
+
+.content .section {
+    margin-bottom: 30px;
+}
+
+.content .section h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #040618;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content .section p, .content .section ul {
+    font-size: 1rem;
+    color: #e0e0e0;
+    line-height: 1.8;
+}
+
+.content .section ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* Skills Section */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.skills span {
+    background-color: #ffffff;
+    color:#b52020 ;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    transition: background 0.3s;
+}
+
+.skills span:hover {
+    background-color: #040409;
+    cursor: pointer;
+}
+
+/* Hover Effect on Projects List */
+.content .section ul li {
+    transition: all 0.3s ease;
+}
+
+.content .section ul li:hover {
+    transform: translateX(10px);
+    color: #b52020;
+}
