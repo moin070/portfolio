@@ -103,3 +103,25 @@ function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+// Scroll to Top Button
+window.addEventListener('scroll', function() {
+  const scrollBtn = document.querySelector('.scroll-top-btn');
+  if (window.pageYOffset > 300) {
+    scrollBtn.classList.add('active');
+  } else {
+    scrollBtn.classList.remove('active');
+  }
+});
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+// Add page-loaded class after load
+window.addEventListener('load', function() {
+  document.body.classList.add('page-loaded');
+});
+

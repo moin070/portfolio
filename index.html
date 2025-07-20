@@ -11,7 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
   </head>
   <body>
     <!-- ✅ NAVBAR -->
@@ -41,7 +41,7 @@
       <div class="home-container">
         <!-- Left: Image -->
         <div class="home-image">
-          <img src="assets/p1.jpg" alt="Moin Khan" />
+          <img src="assets/me.png" alt="Moin Khan" />
         </div>
 
         <!-- Right: Text -->
@@ -115,6 +115,10 @@
             </div>
             <div class="skill">
               <span><i class="fab fa-react"></i> React</span>
+              <div class="progress"><div style="width: 90%"></div></div>
+            </div>
+            <div class="skill">
+<span class="text-white">Tailwind CSS</span>
               <div class="progress"><div style="width: 75%"></div></div>
             </div>
           </div>
@@ -128,7 +132,7 @@
             </div>
             <div class="skill">
               <span><i class="fas fa-feather"></i> Django</span>
-              <div class="progress"><div style="width: 80%"></div></div>
+              <div class="progress"><div style="width: 75%"></div></div>
             </div>
           </div>
 
@@ -136,15 +140,15 @@
           <div class="skill-category">
             <h3><i class="fas fa-database"></i> Databases</h3>
             <div class="skill">
-              <span>SQL</span>
+              <span> <i class="fas fa-database"></i> SQL</span>
+              <div class="progress"><div style="width: 90%"></div></div>
+            </div>
+            <div class="skill">
+              <span> <i class="fas fa-server"></i>MySQL</span>
               <div class="progress"><div style="width: 85%"></div></div>
             </div>
             <div class="skill">
-              <span>MySQL</span>
-              <div class="progress"><div style="width: 80%"></div></div>
-            </div>
-            <div class="skill">
-              <span>Oracle</span>
+              <span> <i class="fas fa-database text-[#40c9a2] mr-2"></i>Oracle</span>
               <div class="progress"><div style="width: 75%"></div></div>
             </div>
           </div>
@@ -174,136 +178,32 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects-section fade-in">
-      <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-          <!-- Project 1 -->
-
-          <div class="project-card">
-            <img
-              src="assets/finance_tracker.png"
-              alt="Finance Tracker"
-              class="project-img"
-              onclick="openModal(this)"
-            />
-            <h3>Personal Finance Tracker</h3>
-            <p>
-              Personal Finance Tracker is a web-based application designed to
-              help users manage their income, expenses, and budgets efficiently.
-              Built using Django for the backend, SQLite for the database, and
-              HTML, CSS, and Bootstrap for a responsive design, the app features
-              secure user authentication, transaction tracking, category-wise
-              expense analysis.
-            </p>
-            <a
-              href="https://github.com/moin070/personal-finance-tracker"
-              target="_blank"
-              class="project-btn"
-            >
-              <i class="fas fa-external-link-alt"></i> View Project
-            </a>
-          </div>
-
-          <!-- Project 2 -->
-          <div class="project-card">
-            <img
-              src="assets/betting_app.png"
-              alt="IPL Betting App"
-              class="project-img"
-              onclick="openModal(this)"
-            />
-            <h3>IPL Betting App</h3>
-            <p>
-              This is a frontend-only IPL Betting Application built using React,
-              Vite, and Tailwind CSS. The application simulates a betting
-              platform where users can create and join contests based on IPL
-              matches by selecting unique players and betting a reward amount
-              per run difference.
-            </p>
-            <a
-              href="https://github.com/moin070/Betting_application/tree/main/ipl_betting_app"
-              target="_blank"
-              class="project-btn"
-            >
-              <i class="fas fa-external-link-alt"></i> View Project
-            </a>
-          </div>
-
-          <!-- Project 3 -->
-          <div class="project-card">
-            <img
-              src="assets/agromitra.png"
-              alt="Personal Blog"
-              class="project-img"
-              onclick="openModal(this)"
-            />
-            <h3>AgroMitra</h3>
-            <p>
-              AgroMitra is a responsive agriculture website that provides Indian
-              farmers with access to government schemes, weather updates, and
-              farming tips. Built with HTML, CSS, AOS, and Typed.js, it aims to
-              bridge the gap between technology and rural farming communities.
-            </p>
-            <a
-              href="https://moin070.github.io/AgroMitra-/"
-              target="_blank"
-              class="project-btn"
-            >
-              <i class="fas fa-external-link-alt"></i> View Project
-            </a>
-          </div>
-
-          <!-- Project 4 -->
-          <div class="project-card">
-            <img
-              src="assets/sure_correct.png"
-              alt="Personal Blog"
-              class="project-img"
-              onclick="openModal(this)"
-            />
-            <h3>Sure Correct Aligner</h3>
-            <p>
-              A frontend-only project named Sure Correct Aligner, designed with
-              HTML, CSS, and JavaScript. This project focuses on creating an
-              interactive and user-friendly interface with responsive design,
-              showcasing modern web development practices.
-            </p>
-            <a
-              href="https://moin070.github.io/sure_correct_agliner/"
-              target="_blank"
-              class="project-btn"
-            >
-              <i class="fas fa-external-link-alt"></i> View Project
-            </a>
-          </div>
-
-          <!-- Project 5 -->
-          <div class="project-card">
-            <img
-              src="assets/hotel_booking.png"
-              alt="Personal Blog"
-              class="project-img"
-              onclick="openModal(this)"
-            />
-            <h3>Hotel Booking System</h3>
-            <p>
-              A backend-only Hotel Booking System built with Python and MySQL.
-              It manages customer details, room bookings, and availability
-              efficiently using database integration. Designed to handle CRUD
-              operations and support future frontend development.
-            </p>
-            <a
-              href="https://github.com/moin070/Hotel_booking"
-              target="_blank"
-              class="project-btn"
-            >
-              <i class="fas fa-external-link-alt"></i> View Project
-            </a>
-          </div>
-        </div>
+<section id="projects" class="project-preview-section">
+  <div class="container">
+    <h2 class="section-title">My Work</h2>
+    <div class="project-teaser">
+      <div class="teaser-image">
+        <a href="project.html">
+          <img src="assets/project_img.png" alt="Projects Preview" class="project-preview-img">
+        </a>
       </div>
-    </section>
+      <div class="teaser-content">
+        <h3>Explore My Projects</h3>
+        <p>I've built various web applications using modern technologies like React, Django, and Python. Each project solves unique challenges and demonstrates different aspects of full-stack development.</p>
+        <div class="tech-hints">
+          <span class="tech-tag">Frontend</span>
+          <span class="tech-tag">Backend</span>
+          <span class="tech-tag">Databases</span>
+          <span class="tech-tag">APIs</span>
+        </div>
+        <a href="project.html" class="cta-btn">
+          <i class="fas fa-arrow-right"></i> View Projects Gallery
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Modal Lightbox -->
     <div id="img-modal" class="img-modal">
