@@ -125,3 +125,23 @@ window.addEventListener('load', function() {
   document.body.classList.add('page-loaded');
 });
 
+
+// Initialize EmailJS with v4
+emailjs.init({
+  publicKey: "g7Umf3YLF5cjhaigI", // 🔹 Replace with your Public Key
+});
+
+// Handle form submission
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm("service_v2knm7k", "template_r59nf66", this)
+    .then(() => {
+      alert("✅ Message sent successfully!");
+      this.reset();
+    })
+    .catch((error) => {
+      alert("❌ Failed to send message. " + JSON.stringify(error));
+    });
+});
+
